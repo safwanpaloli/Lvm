@@ -1,0 +1,24 @@
+      Logical volume manager (LVM)
+
+
+why user lvm?
+
+The main advantages of LVM are increased abstraction, flexibility, and control. Logical volumes can have meaningful names like “databases” or “root-backup”.
+Volumes can be resized dynamically as space requirements change and migrated between physical devices within the pool on a running system or exported easily.
+
+watch df -h [check disk usage]
+
+apt clean
+
+Install nm
+
+lvnextend --resizefs -l +100%FREE /dev/sda1 
+
+pvs or pvscan
+vgs or vgscan
+lvs or lvscan
+
+pvcreate /dev/sdb
+
+pvdisplayd/
+vgdisplay
